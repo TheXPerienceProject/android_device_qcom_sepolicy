@@ -215,3 +215,6 @@ ctl.vendor.rmt_storage     u:object_r:ctl_vendor_rmt_storage_prop:s0
 
 #GPU Available frequencies
 vendor.gpu.available_frequencies u:object_r:vendor_gpu_prop:s0
+
+wlan.driver.ath            u:object_r:wcnss_prop:s0
+wlan.driver.config         u:object_r:wcnss_prop:s0
