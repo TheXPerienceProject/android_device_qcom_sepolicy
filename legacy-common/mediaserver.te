@@ -1,7 +1,6 @@
 qmux_socket(mediaserver)
 
 unix_socket_connect(mediaserver, cnd, cnd)
-unix_socket_send(mediaserver, camera, mm-qcamerad)
 
 allow mediaserver mpctl_socket:dir r_dir_perms;
 unix_socket_send(mediaserver, mpctl, perfd)
