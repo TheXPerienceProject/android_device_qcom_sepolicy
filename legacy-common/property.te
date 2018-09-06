@@ -1,1 +1,2 @@
 type postprocessing_prop, property_type;
+type mpdecision_prop, property_type;
