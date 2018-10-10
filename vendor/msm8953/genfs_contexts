@@ -70,6 +70,8 @@ genfscon sysfs /devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-02/200f000.q
 genfscon sysfs /devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi632@3:qcom,leds@d000/leds u:object_r:sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi632@3:qcom,leds@d300/leds u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi632@3:qcom,vibrator@5700/leds/vibrator u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/platform/soc/78b6000.i2c/i2c-2/2-000c/78b6000.i2c:qcom,smb1355@c:qcom,smb1355-charger@1000/power_supply/parallel u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/78b6000.i2c/i2c-2/2-000c/78b6000.i2c:qcom,smb1355@8:qcom,smb1355-charger@1000/power_supply/parallel u:object_r:sysfs_battery_supply:s0
 
 #Common PMIC files
 genfscon sysfs /class/qcom-battery u:object_r:sysfs_battery_supply:s0
@@ -80,3 +82,14 @@ genfscon  sysfs /devices/platform/soc/1de0000.qcom,venus/subsys1/name  u:object_
 genfscon  sysfs /devices/platform/soc/c200000.qcom,lpass/subsys2/name  u:object_r:sysfs_ssr:s0
 genfscon  sysfs /devices/platform/soc/a21b000.qcom,pronto/subsys3/name u:object_r:sysfs_ssr:s0
 genfscon  sysfs /devices/platform/soc/4080000.qcom,mss/subsys4/name    u:object_r:sysfs_ssr:s0
+
+#PMI path
+genfscon sysfs /devices/soc/qpnp-smbcharger-16/power_supply/battery u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/soc/qpnp-fg-17/power_supply/bms u:object_r:sysfs_battery_supply:s0
+genfscon sysfs /devices/soc/78db000.usb/power_supply/usb u:object_r:sysfs_usb_supply:s0
+genfscon sysfs /devices/soc/qpnp-smbcharger-16/leds/red u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/soc/leds-qpnp-19/leds/ u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/soc/qpnp-flash-led-23/leds/ u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/soc/qpnp-wled-22/leds/ u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/soc/qpnp-haptic-24/leds/vibrator u:object_r:sysfs_leds:s0
+genfscon sysfs /devices/soc/qpnp-vadc-14/usbin u:object_r:sysfs_battery_supply:s0
