@@ -27,3 +27,4 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
     device/qcom/sepolicy/private
 
 -include device/xperience/sepolicy/qcom/sepolicy.mk
+-include device/xperience/sepolicy/common/sepolicy.mk
