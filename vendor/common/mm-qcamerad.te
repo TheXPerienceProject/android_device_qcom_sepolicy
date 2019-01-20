@@ -80,8 +80,4 @@ allow mm-qcamerad sysfs_data:file r_file_perms;
 
 #for v4L node "name" access
 allow mm-qcamerad sysfs_graphics:file rw_file_perms;
-<<<<<<< HEAD
 allow mm-qcamerad sysfs:file { open read };
-
-=======
->>>>>>> 629c8cc... sepolicy: Allow mm-qcamerad to access v4L "name" node
