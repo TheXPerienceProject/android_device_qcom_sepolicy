@@ -1,4 +1,0 @@
-binder_use(vendor_per_mgr)
-binder_service(vendor_per_mgr)
-
-allow vendor_per_mgr binder_per_mgr_service:service_manager { add find };

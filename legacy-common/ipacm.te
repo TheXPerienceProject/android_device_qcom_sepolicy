@@ -1,2 +1,0 @@
-# Allow netfilter_socket creation
-allow ipacm self:netlink_netfilter_socket create_socket_perms_no_ioctl;
