@@ -48,4 +48,4 @@ else
     endif
 endif
 
--include device/xperience/sepolicy/qcom/sepolicy.mk
+#-include device/xperience/sepolicy/qcom/sepolicy.mk
