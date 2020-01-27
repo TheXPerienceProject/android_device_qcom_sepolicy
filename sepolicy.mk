@@ -1,3 +1,4 @@
+ifneq ($(TARGET_EXCLUDE_QCOM_SEPOLICY),true)
 # Board specific SELinux policy variable definitions
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
     device/qcom/sepolicy/generic/public
@@ -58,4 +59,5 @@ ifneq (,$(filter sdm845 sdm710, $(TARGET_BOARD_PLATFORM)))
     endif
 endif
 
+endif # TARGET_USES_PREBUILT_VENDOR_SEPOLICY
 -include device/xperience/sepolicy/qcom/sepolicy.mk
