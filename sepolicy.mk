@@ -19,7 +19,9 @@ PRODUCT_PUBLIC_SEPOLICY_DIRS += \
 PRODUCT_PRIVATE_SEPOLICY_DIRS += \
     device/qcom/sepolicy/product/private
 
-ifeq (,$(filter sdm845 sdm710, $(TARGET_BOARD_PLATFORM)))
+# Include vendor sepolicies only if vendor image is built.
+ifneq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
+ifeq (,$(filter sdm845 sdm710 qcs605, $(TARGET_BOARD_PLATFORM)))
     BOARD_SEPOLICY_DIRS += \
         device/qcom/sepolicy/generic/vendor/common \
         device/qcom/sepolicy/qva/vendor/common/sysmonapp \
@@ -58,6 +60,6 @@ ifneq (,$(filter sdm845 sdm710, $(TARGET_BOARD_PLATFORM)))
       BOARD_SEPOLICY_DIRS += device/qcom/sepolicy/legacy/vendor/test
     endif
 endif
-
+endif # !PREBUILT_VENDOR_SEPOLICY
 endif # TARGET_USES_PREBUILT_VENDOR_SEPOLICY
 -include device/xperience/sepolicy/qcom/sepolicy.mk
