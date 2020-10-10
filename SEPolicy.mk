@@ -32,3 +32,6 @@ PRODUCT_PRIVATE_SEPOLICY_DIRS := \
     $(SEPOLICY_PATH)/qva/product/private
 
 endif
+
+#XPerience sepolicy
+-include device/xperience/sepolicy/qcom/sepolicy.mk
